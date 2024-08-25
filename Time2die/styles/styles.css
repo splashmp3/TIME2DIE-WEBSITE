@@ -1,0 +1,391 @@
+/* General Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a1a1a;
+  /* Dark background for contrast */
+  color: #f0f0f0;
+  /* Light text color */
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  background: url('../images/9oKyhaUOZTJYI6Pk6yNPKvGS.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  /* Light text color for header */
+  text-align: center;
+  padding: 100px 20px;
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+/* Menu Button Styles */
+.menu-button {
+  position: absolute;
+  right: 10px;
+  /* Position on the right */
+  top: 10px;
+}
+
+.menu-button button {
+  background-color: #444;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  /* Rounded corners */
+}
+
+/* Menu Dropdown Styles */
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  top: 60px;
+  /* Adjust spacing if needed */
+  right: 10px;
+  /* Dropdown appears on the right */
+  background-color: #333;
+  /* Lighter gray background */
+  border: none;
+  /* Remove red border */
+  border-radius: 10px;
+  /* Rounded corners */
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* Floating effect */
+  z-index: 1000;
+}
+
+/* Menu Item Styles */
+.menu-item {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.menu-item img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  /* Rounded corners for images */
+}
+
+.menu-item:hover {
+  background-color: #f00;
+  transform: scale(1.05);
+}
+
+/* Header Content Styles */
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+h1 {
+  margin: 0;
+  font-size: 4em;
+  color: #ff4d4d;
+  /* Subtle red color */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  animation: slideIn 1s forwards;
+}
+
+p {
+  font-size: 1.2em;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  animation: slideIn 1s 0.5s forwards;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Section Styles */
+section,
+.event-box,
+.discord-widget {
+  border: none;
+  /* Remove border */
+  border-radius: 12px;
+  /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* Floating effect */
+  padding: 20px;
+  margin: 20px auto;
+  /* Centered with automatic margins */
+  max-width: 90%;
+  /* Adjust max-width for better responsiveness */
+  background-color: #2a2a2a;
+  /* Dark background for sections */
+}
+
+/* Button Styles */
+button {
+  background-color: #ff4d4d;
+  /* Red button background */
+  color: #fff;
+  /* White text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  /* Rounded corners */
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e60000;
+  /* Darker red on hover */
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #f0f0f0;
+  border-top: none;
+  /* Remove red border */
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: #ff4d4d;
+  /* Red link color */
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+a {
+  color: #ff4d4d;
+  /* Red link color */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Center the Discord widget container */
+.discord-widget {
+  display: flex;
+  /* Use flexbox for centering */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically (if height is adjusted) */
+  margin: 20px auto;
+  /* Center the section itself */
+}
+
+/* Styling for the Discord widget iframe */
+.discord-widget iframe {
+  border: none;
+  /* Remove default border */
+  border-radius: 12px;
+  /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* Floating effect */
+}
+
+/* Overview Section Styles */
+.overview-section {
+  background-color: #2a2a2a;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  margin: 30px auto;
+  max-width: 80%;
+}
+
+/* Overview Titles */
+.overview-title {
+  font-size: 2.8em;
+  color: #ff4d4d;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  margin-bottom: 30px;
+}
+
+/* Overview Subtitles and Text */
+.overview-subtitle {
+  font-size: 2em;
+  color: #ff4d4d;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Overview Text */
+.overview-intro,
+.overview-text {
+  font-size: 1.2em;
+  color: #f0f0f0;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+
+/* Category Divs */
+.overview-category {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Each Category */
+.overview-category:hover {
+  background-color: #444;
+  /* Darker background color on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  /* Enhanced shadow for floating effect */
+  transform: translateY(-5px);
+  /* Floating effect */
+}
+
+/* Link Styling */
+.mod-list-link {
+  color: #ff4d4d;
+  text-decoration: none;
+}
+
+.mod-list-link:hover {
+  text-decoration: underline;
+}
+
+/* Upcoming Events Section */
+#events {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #2a2a2a;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin: 20px auto;
+  max-width: 80%;
+}
+
+#events h2 {
+  font-size: 2.5em;
+  color: #ff4d4d;
+  margin-bottom: 20px;
+}
+
+.event-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-box {
+  background-color: #333;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin-bottom: 20px;
+  max-width: 80%;
+}
+
+.event-box p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin: 0;
+}
+
+button {
+  background-color: #ff4d4d;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e60000;
+}
+
+/* Community Section */
+#community {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #2a2a2a;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin: 20px auto;
+  max-width: 80%;
+}
+
+#community h2 {
+  font-size: 2.5em;
+  color: #ff4d4d;
+  margin-bottom: 20px;
+}
+
+#community p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0 10px;
+}
+
+/* Discord Widget */
+.discord-widget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.discord-widget iframe {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0, 0, 255, 0.5);
+  /* Blue glow around the iframe */
+}

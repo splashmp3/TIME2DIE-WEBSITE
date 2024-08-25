@@ -1,0 +1,153 @@
+<!-- THIS CODE WAS MADE BY VOID AND IS THE OWNER OF THIS CODE 
+ 
+DISCORD!!!
+@void.2smooth
+
+email!!!
+jamessvv200@gmail.com
+
+NO CHANGES TO THE CODE MUST BE MADE UNLESS THE OWNER  (VOID) APPROVES IT 
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time2Die - DayZ Server</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script defer src="scripts/scripts.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="menu-button">
+      <button onclick="toggleMenu()">☰ Menu</button>
+    </div>
+    <div id="menu" class="menu-dropdown">
+      <a href="index.htm" class="menu-item"><img src="icons/home_4991416.png" alt="Home"> Home</a>
+      <a href="pages/modlist.html" class="menu-item"><img src="icons/list_1950715.png" alt="Mod List"> Mod List</a>
+      <a href="pages/privacy-policy.html" class="menu-item"><img src="icons/compliant_4252491.png" alt="Privacy Policy">
+        Privacy Policy</a>
+      <a href="pages/terms-of-service.html" class="menu-item"><img src="icons/proposal_14458795.png"
+          alt="Terms of Service"> Terms of Service</a>
+      <a href="pages/profile.html" class="menu-item"><img src="icons/user-profile_4803060.png" alt="Profile">
+        Profile</a>
+    </div>
+    <div class="header-content">
+      <h1>Time2Die</h1>
+    </div>
+  </header>
+
+  <section id="overview" class="overview-section">
+    <h2 class="overview-title">Server Overview</h2>
+    <p class="overview-intro">Welcome to <strong>Time2Die</strong>, an immersive and adrenaline-pumping full PvP DayZ
+      server crafted to deliver an unmatched gaming experience. Whether you're a battle-hardened survivor or just
+      venturing into the DayZ world, our server offers a dynamic and engaging environment where every choice has
+      consequences and each encounter could be your last.</p>
+
+    <div class="overview-category">
+      <h3 class="overview-subtitle">Custom Keycard Systems</h3>
+      <p class="overview-text">Dive into our innovative DNA keycard system, where keycards are strategically placed in
+        custom locations throughout the map. This system introduces an element of exploration and strategy, requiring
+        players to uncover hidden areas and gain access to valuable resources by locating and using these keycards. The
+        custom placement adds layers of challenge and discovery to your survival journey.</p>
+    </div>
+
+    <div class="overview-category">
+      <h3 class="overview-subtitle">Trader</h3>
+      <p class="overview-text">Our server features a bespoke trader with a meticulously balanced economy. Unlike
+        standard
+        traders, our custom trader offers a carefully curated selection of items at fair and strategic prices. This
+        system
+        ensures a meaningful trading experience where players must think critically about their purchases and trades to
+        enhance their survival chances.</p>
+    </div>
+
+    <div class="overview-category">
+      <h3 class="overview-subtitle">Black Markets</h3>
+      <p class="overview-text">Engage with our exclusive black market, a high-risk, high-reward trading hub situated
+        outside conventional safe zones. This custom black market introduces an element of danger and excitement,
+        challenging players to navigate through perilous conditions to access rare and valuable goods. The absence of a
+        safety net makes every transaction a thrilling experience.</p>
+    </div>
+
+    <div class="overview-category">
+      <h3 class="overview-subtitle">Unique Challenges and Events</h3>
+      <p class="overview-text">Stay on your toes with our diverse range of events, including daily airdrops and King of
+        the Hills (KOTH) challenges that add competitive and cooperative dynamics to the gameplay. Additionally, we host
+        special community events designed to foster interaction and competition, keeping the gaming experience fresh and
+        exhilarating.</p>
+    </div>
+
+    <div class="overview-category">
+      <h3 class="overview-subtitle">Mods and Custom Content</h3>
+      <p class="overview-text">Explore our <a href="#" class="mod-list-link">Mod List</a> to discover the unique mods
+        exclusive to Time2Die. These custom mods, along with extensive map edits, significantly enhance the gameplay
+        experience by expanding the game world and introducing new challenges and features tailored specifically for our
+        server.</p>
+    </div>
+
+    <div class="overview-category">
+      <h3 class="overview-subtitle">Community and Support</h3>
+      <p class="overview-text">Join a vibrant and supportive community known for its friendliness and helpfulness. Our
+        dedicated admin team is committed to providing assistance and ensuring a smooth and enjoyable experience for all
+        players. Whether you're seeking advice or need support, our community is here to help you thrive in the Time2Die
+        world.</p>
+    </div>
+  </section>
+
+
+
+
+
+  <section id="events">
+    <h2>Upcoming Events</h2>
+    <div class="event-container">
+      <div class="event-box" id="eventBox">
+        <p>No upcoming events at the moment. Stay tuned for thrilling PvP tournaments, scavenger hunts, and special
+          community events. Make sure to check back often or join our Discord to stay updated!</p>
+      </div>
+      <button id="loadEventsBtn">Load Events</button>
+    </div>
+  </section>
+
+  <section id="community">
+    <h2>Our Community</h2>
+    <p>At Time2Die, we pride ourselves on our friendly and respectful community. Our members are always ready to help
+      newcomers, share tips, and form alliances. Whether you're here to dominate the battlefield or just survive another
+      day, you'll find like-minded players and lasting friendships. Join us and be a part of the action!</p>
+
+    <!-- Discord Widget -->
+    <div class="discord-widget">
+      <iframe src="https://discord.com/widget?id=988534425669206106&theme=dark" width="350" height="500"
+        allowtransparency="true" frameborder="0"
+        sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </div>
+  </section>
+
+
+  <footer>
+    <p>&copy; 2024 Time2Die. All rights reserved.</p>
+    <p><a href="/pages/terms-of-service.html" target="_blank">Terms of Service</a> | <a
+        href="/pages/privacy-policy.html" target="_blank">Privacy Policy</a></p>
+    <p><a href="https://discord.gg/MYDJyeGnmX" target="_blank">Join our Discord</a></p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById('menu');
+      if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+      } else {
+        menu.style.display = 'block';
+      }
+    }
+  </script>
+</body>
+
+</html>
